@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="menu_style.css">
+<title>早餐店菜單</title>
+</head>
+<body>
+  <header>
+    <div class="headercontent">
+      <h1>YuBrunch</h1>
+      <button id="menubutton">MENU</button>
+    </div>
+  </header>
+  
+</div>
+  <section class="menu1">
+    <div class="item" data-id="1" data-price="8.99">
+      <h2>烤土司</h2>
+      <p>炒蛋、培根、麵包、水果</p>
+      <span class="price">$8.99</span>
+      <select id="toastflavor">
+        <option value="培根">培根</option>
+        <option value="卡啦雞">卡啦雞</option>
+        <option value="鮪魚">鮪魚</option>
+        <option value="牛肉">牛肉</option>
+        <option value="漢堡排">漢堡排</option>
+      </select><br>
+      <button class="add-to-cart" onclick="addToCart(this)">加入購物車</button>
+    </div>
+    <div class="item" data-id="2" data-price="5.49">
+      <h2>法式吐司</h2>
+      <p>香脆法式吐司配楓糖漿</p>
+      <span class="price">$5.49</span>
+      <button class="add-to-cart" onclick="addToCart(this)">加入購物車</button>
+    </div>
+    <div class="item" data-id="3" data-price="9.64">
+        <h2>鬆餅套餐</h2>
+        <p>鬆餅兩片、糖漿、莓果、奶油、蜂蜜優格</p>
+        <span class="price">$9.64</span>
+        <button class="add-to-cart" onclick="addToCart(this)">加入購物車</button>
+    </div>
+    <div class="item" data-id="4" data-price="1">
+        <h2>飲品</h2>
+        <p>紅茶、綠茶、奶茶、豆漿</p>
+        <span class="price">$1</span>
+        <select id="drinkSelect">
+            <option value="紅茶">紅茶</option>
+            <option value="綠茶">綠茶</option>
+            <option value="奶茶">奶茶</option>
+            <option value="豆漿">豆漿</option>
+        </select>
+        <button class="add-to-cart" onclick="addToCart(this)">加入購物車</button>
+    </div>
+    <div class="item" data-id="5" data-price="2">
+        <h2>Coffee</h2>
+        <p>美式咖啡、拿鐵、焦糖瑪奇朵</p>
+        <span class="price">$2</span>
+        <select id="drinkSelect">
+            <option value="美式咖啡">美式咖啡</option>
+            <option value="拿鐵">拿鐵</option>
+            <option value="焦糖瑪奇朵">焦糖瑪奇朵</option>
+        </select>
+        <button class="add-to-cart" onclick="addToCart(this)">加入購物車</button>
+    </div>
+  </section>
+  <div class="cart">
+    <h2>購物車</h2>
+    <ul id="cartList"></ul>
+  </div>
+    <div class="total">
+        <p class="totalAmount">總金額：<span id="totalAmount">$0.00</span></p>
+    </div>
+  <script src="menu_active.js"></script>
+</body>
+</html>

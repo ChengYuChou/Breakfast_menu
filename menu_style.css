@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  height: 65px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+.headcontent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#menubutton {
+  color: #000000;
+  position: relative;
+  left: -550px;
+  top: -45px;
+  border-radius: 30%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu {
+  display: none; /* 初始時隱藏菜單 */
+}
+
+.total {
+  position: relative;
+  left: 650px;
+  margin: 20px;
+}
+
+.total-amount {
+  padding-left: 20px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -200px; /* 設定初始位置在左側隱藏 */
+  width: 200px;
+  height: 100%;
+  background-color: #444;
+  padding-top: 40px;
+  transition: left 0.3s ease;
+}
+
+.sidebar.active {
+  left: 0; /* 將選單拉出來顯示 */
+}
+
+.menu1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.cart {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.cart h2 {
+  margin-top: 0;
+}
+
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.price {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.item[data-id="4"] {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 300px;
+  position: relative; /* 為了讓下拉選單定位 */
+}
+
+#drinkSelect {
+  margin-top: 10px;
+  width: 100%;
+  padding: 5px;
+}
+
+.item[data-id="5"] {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    position: relative; /* 為了讓下拉選單定位 */
+  }
+  
+  #drinkSelect {
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px;
+  }
